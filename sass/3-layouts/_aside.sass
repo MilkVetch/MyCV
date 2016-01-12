@@ -1,0 +1,83 @@
+aside
+	-webkit-user-select: none
+	.toggle-btn
+		cursor: pointer
+		z-index: 999
+		box-shadow: 0 0 5px rgba(0,0,0,0.2)
+		+fixed(30px,null,null,30px)
+		+size(60px, 60px)
+		border-radius: 50%
+		background: $c-aurora
+		+bp(max,414px)
+			+fixed(15px,null,null,15px)
+		span
+			display: block
+			+size(30px,4px)
+			background-color: $c-winter
+			position: relative
+			left: 15px
+			top: 28px
+			&:before, &:after
+				+juice-prefixer(transition, all 0.2s ease, webkit moz ms o spec)
+				position: absolute
+				content: ""
+				+size(30px,4px)
+				background-color: $c-winter
+			&:before
+				top: -8px
+			&:after
+				top: 8px
+		&:hover
+			box-shadow: 0 0 5px rgba(0,0,0,0.6)
+			span, span:before, span:after
+				background-color: white
+	.toggle-btn.menu-open
+		span
+			background-color: transparent
+		span:before, span:after
+			background-color: $c-winter
+			top: 0
+		span:before
+			+juice-prefixer(transform, rotate(45deg), webkit moz ms o spec)
+		span:after
+			+juice-prefixer(transform, rotate(-45deg), webkit moz ms o spec)
+		&:hover
+			span:before, span:after
+				background-color: white
+	nav
+		z-index: 998
+		box-shadow: 0 0 2px rgba(0,0,0,0.2)
+		+fixed(60px,null,null,60px)
+		+size(20px,20px)
+		overflow: hidden
+		background: $c-winter
+		color: $c-inkjade
+		border-radius: 5px
+		+juice-prefixer(transition, all 0.8s ease, webkit moz ms o spec)
+		ul
+			list-style: none
+			padding: 10px
+			li
+				text-align: center
+				height: 35px
+				line-height: 35px
+				cursor: pointer
+				+juice-prefixer(transition, all 0.2s ease, webkit moz ms o spec)
+				&:hover
+					background: $c-aurora
+					color: $c-winter
+					font-weight: bold
+		+bp(max,414px)
+			border-radius: 0 0 5px 5px
+			+fixed(-300px,null,null,0px)
+			+size(100%,300px)
+	nav.menu-open
+		+size(250px,300px)
+		+bp(max,414px)
+			+fixed(0px,null,null,0px)
+			+size(100%,300px)
+	.btn-ctr
+		z-index: 997
+		+fixed(0px,0px,0px,0px)
+		+size(100%,100%)
+		display: none
