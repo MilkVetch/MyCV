@@ -10,6 +10,7 @@ aside
 		background: $c-aurora
 		+bp(max,414px)
 			+fixed(15px,null,null,15px)
+			+size(40px, 40px)
 		span
 			display: block
 			+size(30px,4px)
@@ -17,11 +18,17 @@ aside
 			position: relative
 			left: 15px
 			top: 28px
+			+bp(max,414px)
+				+size(20px,2px)
+				left: 10px
+				top: 19px
 			&:before, &:after
 				+juice-prefixer(transition, all 0.2s ease, webkit moz ms o spec)
 				position: absolute
 				content: ""
 				+size(30px,4px)
+				+bp(max,414px)
+					+size(20px,2px)
 				background-color: $c-winter
 			&:before
 				top: -8px

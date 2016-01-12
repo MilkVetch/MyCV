@@ -26,7 +26,9 @@ aside .toggle-btn {
   aside .toggle-btn {
     position: fixed;
     top: 15px;
-    left: 15px; } }
+    left: 15px;
+    width: 40px;
+    height: 40px; } }
 aside .toggle-btn span {
   display: block;
   width: 30px;
@@ -35,6 +37,12 @@ aside .toggle-btn span {
   position: relative;
   left: 15px;
   top: 28px; }
+@media screen and (max-width: 414px) {
+  aside .toggle-btn span {
+    width: 20px;
+    height: 2px;
+    left: 10px;
+    top: 19px; } }
 aside .toggle-btn span:before, aside .toggle-btn span:after {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -46,6 +54,10 @@ aside .toggle-btn span:before, aside .toggle-btn span:after {
   width: 30px;
   height: 4px;
   background-color: #F4EBD8; }
+@media screen and (max-width: 414px) {
+  aside .toggle-btn span:before, aside .toggle-btn span:after {
+    width: 20px;
+    height: 2px; } }
 aside .toggle-btn span:before {
   top: -8px; }
 aside .toggle-btn span:after {
@@ -137,7 +149,7 @@ aside .btn-ctr {
   display: none; }
 
 section.welcome {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url(../img/welcome.png);
   background-attachment: fixed; }
@@ -157,7 +169,8 @@ section.welcome .welcome-container .logo {
   margin: 0 auto;
   background: url(../img/logo.svg);
   background-size: 100% 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
 @media only screen and (max-width: 64em) {
   section.welcome .welcome-container .logo {
     width: 160px; } }
@@ -192,14 +205,14 @@ section.welcome .welcome-container .welcome-subtitle {
 @media only screen and (max-width: 40em) {
   section.welcome .welcome-container .welcome-subtitle {
     font-size: 14px; } }
-section.welcome .welcome-container .welcome-arrow {
+section.welcome .welcome-container i {
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
+  text-align: center;
   width: 40px;
   height: 40px;
+  margin: 0 auto;
+  display: block;
   border-radius: 50%;
-  padding-left: 5px;
   border: 1px solid #3A3D3F;
   font-size: 24px;
   line-height: 40px;
@@ -207,13 +220,49 @@ section.welcome .welcome-container .welcome-arrow {
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg); }
-section.welcome .welcome-container .welcome-arrow:hover {
+  transition: all 0.4s ease; }
+section.welcome .welcome-container i:hover {
   background-color: #C03B46;
   color: white;
   border-color: #C03B46; }
+section.welcome .header-container {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 180px;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid #3A3D3F;
+  color: #3A3D3F;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+@media screen and (max-width: 414px) {
+  section.welcome .header-container {
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right: 15px;
+    line-height: 40px; }
+  section.welcome .header-container span {
+    display: none; } }
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  section.welcome .header-container {
+    width: 60px;
+    height: 60px; }
+  section.welcome .header-container span {
+    display: none; } }
+section.welcome .header-container:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  background-color: #C03B46;
+  border-color: #C03B46;
+  color: #F4EBD8; }
+
+section {
+  height: 600px; }
