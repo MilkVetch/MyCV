@@ -1,3 +1,4 @@
+// aside
 $('.toggle-btn').click(function() {
 	$(this).toggleClass('menu-open');
 	$('aside nav').toggleClass('menu-open');
@@ -12,5 +13,6 @@ $('aside nav ul li').click(function() {
 	setTimeout(function(){
 		$('.toggle-btn').toggleClass('menu-open');
 		$('aside nav').toggleClass('menu-open');
+		$('.btn-ctr').hide();
 	},300);
 });
