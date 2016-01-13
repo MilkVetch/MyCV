@@ -1,24 +1,23 @@
 section.about
-	background-color: $c-pompei
-	padding-top: 50px
-	+media($tablet)
-		padding-top: 30px
-	+media($mobile)
-		padding-top: 0
+	background-color: $c-inkjade
 	.wrapper
 		+outer-container
 		.col-6
 			width: 100%
 			height: 500px
+			overflow: hidden
 			+span-columns(6)
-			+media($tablet)
-				+span-columns(4)
-			+media($mobile)
-				+span-columns(4)
+			+bp(max,695px)
+				+span-columns(12)
 		.col-6.image
-			background: url(../img/sketch.jpg) center right
+			background-image: url(../img/sketch.jpg)
+			+juice-prefixer(transition, all 0.4s ease, webkit moz ms o spec)
+			background-position: center right
 			background-size: cover
 			background-repeat: none
+			+bp(max,695px)
+				height: 300px
+				background-position: 0% 25%
 			+media($mobile)
 				height: 200px
 				background-position: 0% 25%
@@ -26,8 +25,54 @@ section.about
 			padding-left: 40px
 			padding-right: 40px
 			color: $c-winter
+			+bp(max,695px)
+				height: auto
 			h1
 				text-align: center
 			p
 				line-height: 1.4
+				margin-bottom: 10px
+			.interest-box
+				+outer-container
+				li.interest
+					height: 80px
+					margin-bottom: 10px
+					i
+						cursor: pointer
+						color: $c-winter
+						display: block
+						+size(80px)
+						border-radius: 50%
+						border: 1px solid $c-winter
+						margin: 0 auto
+						// background-color: yellow
+						text-align: center
+						line-height: 80px
+						font-size: 2.5em
+						+juice-prefixer(transition, all 0.2s ease, webkit moz ms o spec)
+						&:hover
+							background-color: $c-pompei
+						+bp(695px,885px)
+							font-size: 2em
+							+size(60px)
+							line-height: 60px
+					+span-columns(3)
+					+omega(4n)
 
+
+					+media($mobile)
+						+span-columns(2)
+						+omega(2n)
+			.interest-description
+				margin-top: 20px
+				margin-bottom: 40px
+				height: 20px
+				overflow: hidden
+				ul
+					list-style: none
+					li
+						text-align: center
+					li.int-des-0
+						display: block
+					li.int-des-1,li.int-des-2,li.int-des-3,li.int-des-4
+						display: none
