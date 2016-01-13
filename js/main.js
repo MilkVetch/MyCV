@@ -1,6 +1,3 @@
-// if ($(window).width() < 695) {
-// 	alert('!');
-// }
 // aside
 $('.toggle-btn').click(function() {
 	$(this).toggleClass('menu-open');

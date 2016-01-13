@@ -42,6 +42,90 @@ body:before {
   padding: 0;
   font-family: arial; }
 
+@keyframes adobeMargin {
+  0% {
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 80px;
+    height: 80px; }
+  25% {
+    margin-right: 40px;
+    margin-top: 7.5px;
+    width: 80px;
+    height: 80px; }
+  50% {
+    margin-right: 80px;
+    margin-top: 15px;
+    width: 20px;
+    height: 20px; }
+  100% {
+    margin-right: 95px;
+    margin-top: 30px;
+    width: 20px;
+    height: 20px; } }
+@-moz-keyframes adobeMargin {
+  0% {
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 80px;
+    height: 80px; }
+  25% {
+    margin-right: 40px;
+    margin-top: 7.5px;
+    width: 80px;
+    height: 80px; }
+  50% {
+    margin-right: 80px;
+    margin-top: 15px;
+    width: 20px;
+    height: 20px; }
+  100% {
+    margin-right: 95px;
+    margin-top: 30px;
+    width: 20px;
+    height: 20px; } }
+@-webkit-keyframes adobeMargin {
+  0% {
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 80px;
+    height: 80px; }
+  25% {
+    margin-right: 40px;
+    margin-top: 7.5px;
+    width: 80px;
+    height: 80px; }
+  50% {
+    margin-right: 80px;
+    margin-top: 15px;
+    width: 20px;
+    height: 20px; }
+  100% {
+    margin-right: 95px;
+    margin-top: 30px;
+    width: 20px;
+    height: 20px; } }
+@-o-keyframes adobeMargin {
+  0% {
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 80px;
+    height: 80px; }
+  25% {
+    margin-right: 40px;
+    margin-top: 7.5px;
+    width: 80px;
+    height: 80px; }
+  50% {
+    margin-right: 80px;
+    margin-top: 15px;
+    width: 20px;
+    height: 20px; }
+  100% {
+    margin-right: 95px;
+    margin-top: 30px;
+    width: 20px;
+    height: 20px; } }
 aside {
   -webkit-user-select: none; }
 aside .toggle-btn {
@@ -432,3 +516,34 @@ section.about .wrapper .col-6.content .interest-description ul li.int-des-0 {
   display: block; }
 section.about .wrapper .col-6.content .interest-description ul li.int-des-1, section.about .wrapper .col-6.content .interest-description ul li.int-des-2, section.about .wrapper .col-6.content .interest-description ul li.int-des-3, section.about .wrapper .col-6.content .interest-description ul li.int-des-4 {
   display: none; }
+
+section.skill {
+  background-color: #A82E45;
+  height: 400px; }
+section.skill .software .soft-nav ul {
+  height: 80px;
+  list-style: none;
+  text-align: center; }
+section.skill .software .soft-nav ul li {
+  display: inline-block;
+  background-size: 100% 100%;
+  animation: adobeMargin 1s;
+  -moz-animation: adobeMargin 1s;
+  -webkit-animation: adobeMargin 1s;
+  -moz-animation: adobeMargin 1s;
+  margin-top: 30px;
+  margin-right: 95px;
+  width: 20px;
+  height: 20px; }
+section.skill .software .soft-nav ul li:nth-child(1) {
+  background-image: url(../img/FW.png); }
+section.skill .software .soft-nav ul li:nth-child(2) {
+  background-image: url(../img/AI.png); }
+section.skill .software .soft-nav ul li:nth-child(3) {
+  background-image: url(../img/PS.png); }
+section.skill .software .soft-nav ul li:nth-child(4) {
+  background-image: url(../img/DW.png); }
+section.skill .software .soft-nav ul li:nth-child(5) {
+  background-image: url(../img/ID.png); }
+section.skill .software .soft-nav ul li:last-child {
+  margin-right: 0; }
