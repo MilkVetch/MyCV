@@ -1,6 +1,13 @@
 section.skill
 	background-color: $c-pompei
 	height: 400px
+	.skill-title
+		text-align: center
+		h1
+			display: inline-block
+			margin-top: 50px
+			+bp(max,480px)
+				margin-top: 20px
 	.software
 		.soft-nav
 			ul
@@ -10,27 +17,52 @@ section.skill
 				li
 					display: inline-block
 					background-size: 100% 100%
-					// +juice-prefixer(transition, all 1s ease, webkit moz ms o spec)
-					// animation: adobeSize 1s
-					// -moz-animation: adobeSize 1s
-					// -webkit-animation: adobeSize 1s
-					// -moz-animation: adobeSize 1s
-					animation: adobeMargin 1s
-					-moz-animation: adobeMargin 1s
-					-webkit-animation: adobeMargin 1s
-					-moz-animation: adobeMargin 1s
-					margin-top: 30px
-					margin-right: 95px
 					+size(20px)
-					&:nth-child(1)
-						background-image: url(../img/FW.png)
-					&:nth-child(2)
-						background-image: url(../img/AI.png)
-					&:nth-child(3)
-						background-image: url(../img/PS.png)
-					&:nth-child(4)
-						background-image: url(../img/DW.png)
-					&:nth-child(5)
-						background-image: url(../img/ID.png)
+					border-radius: 50%
+					cursor: pointer
+					&:hover
+						box-shadow: 0 0 5px rgba(0,0,0,0.6)
+					margin-top: 30px
+					+juice-prefixer(transition, animation 1s, webkit moz ms o spec)
+					animation: adobe 0.8s
+					-moz-animation: adobe 0.8s
+					-webkit-animation: adobe 0.8s
+					-moz-animation: adobe 0.8s
+					&:not(:last-child)
+						margin-right: 95px
 					&:last-child
-						margin-right: 0
+						animation: adobeLast 0.8s
+						-moz-animation: adobeLast 0.8s
+						-webkit-animation: adobeLast 0.8s
+						-moz-animation: adobeLast 0.8s
+					&:nth-child(1)
+						background-color: $c-fw
+						&:hover
+							background-image: url(../img/FW.png)
+					&:nth-child(2)
+						background-color: $c-ai
+						&:hover
+							background-image: url(../img/AI.png)
+					&:nth-child(3)
+						background-color: $c-ps
+						&:hover
+							background-image: url(../img/PS.png)
+					&:nth-child(4)
+						background-color: $c-dw
+						&:hover
+							background-image: url(../img/DW.png)
+					&:nth-child(5)
+						background-color: $c-id
+						&:hover
+							background-image: url(../img/ID.png)
+					+bp(max,880px)
+						margin-top: 20px
+						animation: none
+						&:last-child
+							animation: none
+						&:not(:last-child)
+							margin-right: 70px
+					+bp(max,480px)
+						margin-top: 10px
+						&:not(:last-child)
+							margin-right: 30px

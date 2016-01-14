@@ -1,193 +1,251 @@
-@keyframes adobeMargin
+@keyframes adobe
 {
 	0% {
 		margin-right: 20px;
-		margin-top: 0px;
 		width: 80px;
 		height: 80px;
+		margin-top: 0px;
 	}
 	25% {
 		margin-right: 40px;
-		margin-top: 7.5px;
-		width: 80px;
-		height: 80px;
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
 	}
 	50% {
-		margin-right: 80px;
-		margin-top:15px;
-		width: 20px;
-		height: 20px;
+		margin-right: 120px;
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		margin-right: 100px;
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
 	}
 	100% {
 		margin-right: 95px;
-		margin-top:30px;
 		width: 20px;
 		height: 20px;
+		margin-top: 30px;
 	}
 }
 
-@-moz-keyframes adobeMargin
+@-moz-keyframes adobe
 {
 	0% {
 		margin-right: 20px;
-		margin-top: 0px;
 		width: 80px;
 		height: 80px;
+		margin-top: 0px;
 	}
 	25% {
 		margin-right: 40px;
-		margin-top: 7.5px;
-		width: 80px;
-		height: 80px;
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
 	}
 	50% {
-		margin-right: 80px;
-		margin-top:15px;
-		width: 20px;
-		height: 20px;
+		margin-right: 120px;
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		margin-right: 100px;
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
 	}
 	100% {
 		margin-right: 95px;
-		margin-top:30px;
 		width: 20px;
 		height: 20px;
+		margin-top: 30px;
 	}
 }
 
-@-webkit-keyframes adobeMargin
+@-webkit-keyframes adobe
 {
 	0% {
 		margin-right: 20px;
-		margin-top: 0px;
 		width: 80px;
 		height: 80px;
+		margin-top: 0px;
 	}
 	25% {
 		margin-right: 40px;
-		margin-top: 7.5px;
-		width: 80px;
-		height: 80px;
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
 	}
 	50% {
-		margin-right: 80px;
-		margin-top:15px;
-		width: 20px;
-		height: 20px;
+		margin-right: 120px;
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		margin-right: 100px;
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
 	}
 	100% {
 		margin-right: 95px;
-		margin-top:30px;
 		width: 20px;
 		height: 20px;
+		margin-top: 30px;
 	}
 }
 
-@-o-keyframes adobeMargin
+@-o-keyframes adobe
 {
 	0% {
 		margin-right: 20px;
-		margin-top: 0px;
 		width: 80px;
 		height: 80px;
+		margin-top: 0px;
 	}
 	25% {
 		margin-right: 40px;
-		margin-top: 7.5px;
-		width: 80px;
-		height: 80px;
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
 	}
 	50% {
-		margin-right: 80px;
-		margin-top:15px;
-		width: 20px;
-		height: 20px;
+		margin-right: 120px;
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		margin-right: 100px;
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
 	}
 	100% {
 		margin-right: 95px;
-		margin-top:30px;
 		width: 20px;
 		height: 20px;
+		margin-top: 30px;
 	}
 }
 
+@keyframes adobeLast
+{
+	0% {
+		width: 80px;
+		height: 80px;
+		margin-top: 0px;
+	}
+	25% {
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
+	}
+	50% {
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
+	}
+	100% {
+		width: 20px;
+		height: 20px;
+		margin-top: 30px;
+	}
+}
 
+@-moz-keyframes adobeLast
+{
+	0% {
+		width: 80px;
+		height: 80px;
+		margin-top: 0px;
+	}
+	25% {
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
+	}
+	50% {
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
+	}
+	100% {
+		width: 20px;
+		height: 20px;
+		margin-top: 30px;
+	}
+}
 
-// @keyframes adobeSize
-// {
-// 	0% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	25% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	50% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	100% {
-// 		width: 20px;
-// 		height: 20px;
-// 	}
-// }
+@-webkit-keyframes adobeLast
+{
+	0% {
+		width: 80px;
+		height: 80px;
+		margin-top: 0px;
+	}
+	25% {
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
+	}
+	50% {
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
+	}
+	100% {
+		width: 20px;
+		height: 20px;
+		margin-top: 30px;
+	}
+}
 
-// @keyframes -moz-adobeSize
-// {
-// 	0% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	25% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	50% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	100% {
-// 		width: 20px;
-// 		height: 20px;
-// 	}
-// }
-
-// @keyframes -webkit-adobeSize
-// {
-// 	0% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	25% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	50% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	100% {
-// 		width: 20px;
-// 		height: 20px;
-// 	}
-// }
-
-// @keyframes -o-adobeSize
-// {
-// 	0% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	25% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	50% {
-// 		width: 80px;
-// 		height: 80px;
-// 	}
-// 	100% {
-// 		width: 20px;
-// 		height: 20px;
-// 	}
-// }
+@-o-keyframes adobeLast
+{
+	0% {
+		width: 80px;
+		height: 80px;
+		margin-top: 0px;
+	}
+	25% {
+		width: 65px;
+		height: 65px;
+		margin-top: 8px;
+	}
+	50% {
+		width: 50px;
+		height: 50px;
+		margin-top: 16px;
+	}
+	60% {
+		width: 35px;
+		height: 35px;
+		margin-top: 24px;
+	}
+	100% {
+		width: 20px;
+		height: 20px;
+		margin-top: 30px;
+	}
+}
