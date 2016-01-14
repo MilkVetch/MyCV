@@ -1,3 +1,7 @@
+.owl-wrapper {
+  @include juice-prefixer(transition, all 0.2s ease, webkit moz ms o spec);
+}
+
 #owl-demo .item{
   background: #3fbf79;
   padding: 30px 0px;

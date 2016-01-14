@@ -46,19 +46,55 @@ $('.interest-box i').mouseover(function() {
       itemsDesktop : [1000,1], //5 items between 1000px and 901px
       itemsDesktopSmall : [900,1], // betweem 900px and 601px
       itemsTablet: [600,1], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+      pagination: false
   });
 
   // Custom Navigation Events
-  $(".next").click(function(){
-    owl.trigger('owl.next');
-  })
-  $(".prev").click(function(){
-    owl.trigger('owl.prev');
-  })
-  $(".play").click(function(){
-    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-  })
-  $(".stop").click(function(){
-    owl.trigger('owl.stop');
-  })
+	$('.fw').click(function() {
+		$('.owl-wrapper').css({
+			'-webkit-transform': 'translate3d(-0%, 0px, 0px)',
+			'-moz-transform': 'translate3d(-0%, 0px, 0px)',
+			'-ms-transform': 'translate3d(-0%, 0px, 0px)',
+			'-o-transform': 'translate3d(-0%, 0px, 0px)',
+			'transform': 'translate3d(-0%, 0px, 0px)'
+		});
+	});
+	$('.ai').click(function() {
+		$('.owl-wrapper').css({
+			'-webkit-transform': 'translate3d(-10%, 0px, 0px)',
+			'-moz-transform': 'translate3d(-10%, 0px, 0px)',
+			'-ms-transform': 'translate3d(-10%, 0px, 0px)',
+			'-o-transform': 'translate3d(-10%, 0px, 0px)',
+			'transform': 'translate3d(-10%, 0px, 0px)'
+		});
+	});
+	$('.ps').click(function() {
+		$('.owl-wrapper').css({
+			'-webkit-transform': 'translate3d(-20%, 0px, 0px)',
+			'-moz-transform': 'translate3d(-20%, 0px, 0px)',
+			'-ms-transform': 'translate3d(-20%, 0px, 0px)',
+			'-o-transform': 'translate3d(-20%, 0px, 0px)',
+			'transform': 'translate3d(-20%, 0px, 0px)'
+		});
+	});
+	$('.dw').click(function() {
+		$('.owl-wrapper').css({
+			'-webkit-transform': 'translate3d(-30%, 0px, 0px)',
+			'-moz-transform': 'translate3d(-30%, 0px, 0px)',
+			'-ms-transform': 'translate3d(-30%, 0px, 0px)',
+			'-o-transform': 'translate3d(-30%, 0px, 0px)',
+			'transform': 'translate3d(-30%, 0px, 0px)'
+		});
+	});
+	$('.id').click(function() {
+		$('.owl-wrapper').css({
+			'-webkit-transform': 'translate3d(-40%, 0px, 0px)',
+			'-moz-transform': 'translate3d(-40%, 0px, 0px)',
+			'-ms-transform': 'translate3d(-40%, 0px, 0px)',
+			'-o-transform': 'translate3d(-40%, 0px, 0px)',
+			'transform': 'translate3d(-40%, 0px, 0px)'
+		});
+	});
+
+
