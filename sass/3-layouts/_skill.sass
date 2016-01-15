@@ -1,6 +1,6 @@
 section.skill
 	background-color: $c-pompei
-	height: 400px
+	// height: 400px
 	.skill-title
 		text-align: center
 		h1
@@ -66,3 +66,51 @@ section.skill
 						margin-top: 10px
 						&:not(:last-child)
 							margin-right: 30px
+		.soft-box
+			.item
+				+outer-container
+				.soft-ico
+					+span-columns(5)
+					.soft-logo
+						+size(180px)
+						margin: 0 auto
+						border-radius: 10px
+						text-align: center
+						line-height: 180px
+						+letterpress(0.75)
+						font-size: 50px
+						span
+							font-size: 0.7em
+						background-size: 100% 100%
+						position: relative
+						&:hover
+							&:after,&:before
+								+juice-prefixer(transform, rotate(0deg), webkit moz ms o spec)
+						&:after,&:before
+							+juice-prefixer(transition, all 0.2s ease, webkit moz ms o spec)
+							content: ""
+							position: absolute
+							left: 0
+							top: 0
+							+size(100%)
+							border-radius: 10px
+						&:after
+							z-index: -1
+							+juice-prefixer(transform, rotate(20deg), webkit moz ms o spec)
+						&:before
+							z-index: -2
+							+juice-prefixer(transform, rotate(-20deg), webkit moz ms o spec)
+
+				.soft-con
+					+span-columns(7)
+					.soft-title
+						font-size: 25px
+						margin: 20px auto
+					.soft-des
+						+outer-container
+						.soft-par
+							+span-columns(7)
+						.soft-mark
+							+span-columns(5)
+							font-size: 50px
+							line-height: 1.4em

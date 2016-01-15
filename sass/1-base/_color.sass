@@ -9,3 +9,40 @@ $c-ai: #D97828
 $c-dw: #7B9905
 $c-fw: #C89700
 $c-id: #BA4D81
+
+.soft-box
+	.item.c-fw
+		.soft-logo
+			background-color: $c-fw
+			&:before
+				background-color: tint($c-fw, 25%)
+			&:after
+				background-color: tint($c-fw, 15%)
+	.item.c-ai
+		.soft-logo
+			background-color: $c-ai
+			&:before
+				background-color: tint($c-ai, 25%)
+			&:after
+				background-color: tint($c-ai, 15%)
+	.item.c-ps
+		.soft-logo
+			background-color: $c-ps
+			&:before
+				background-color: tint($c-ps, 25%)
+			&:after
+				background-color: tint($c-ps, 15%)
+	.item.c-dw
+		.soft-logo
+			background-color: $c-dw
+			&:before
+				background-color: tint($c-dw, 25%)
+			&:after
+				background-color: tint($c-dw, 15%)
+	.item.c-id
+		.soft-logo
+			background-color: $c-id
+			&:before
+				background-color: tint($c-id, 25%)
+			&:after
+				background-color: tint($c-id, 15%)
