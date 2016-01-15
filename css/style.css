@@ -73,6 +73,9 @@ body:before {
   padding: 0;
   font-family: arial; }
 
+h1 {
+  text-decoration: underline; }
+
 @keyframes adobe {
   0% {
     margin-right: 20px;
@@ -269,6 +272,7 @@ body:before {
   transition: all 0.2s ease; }
 
 #owl-demo .item {
+  cursor: e-resize;
   padding: 30px 0px;
   color: #FFF;
   width: 100%;
@@ -276,6 +280,9 @@ body:before {
   -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: center; }
+@media screen and (max-width: 768px) {
+  #owl-demo .item {
+    padding-top: 0px; } }
 
 .customNavigation {
   text-align: center; }
@@ -599,8 +606,10 @@ section.about .wrapper .col-6.content {
 @media screen and (max-width: 695px) {
   section.about .wrapper .col-6.content {
     height: auto; } }
-section.about .wrapper .col-6.content h1 {
+section.about .wrapper .col-6.content h1, section.about .wrapper .col-6.content h2 {
   text-align: center; }
+section.about .wrapper .col-6.content h2 {
+  margin-bottom: 20px; }
 section.about .wrapper .col-6.content p {
   line-height: 1.4;
   margin-bottom: 10px; }
@@ -689,10 +698,21 @@ section.skill .skill-title h1 {
 @media screen and (max-width: 480px) {
   section.skill .skill-title h1 {
     margin-top: 20px; } }
+section.skill .skill-title h2 {
+  display: block;
+  margin: 0 auto;
+  color: #F4EBD8; }
+@media screen and (max-width: 480px) {
+  section.skill .skill-title h2 {
+    font-size: 1em;
+    margin-bottom: 8px; } }
 section.skill .software .soft-nav ul {
   height: 80px;
   list-style: none;
   text-align: center; }
+@media screen and (max-width: 480px) {
+  section.skill .software .soft-nav ul {
+    height: 50px; } }
 section.skill .software .soft-nav ul li {
   display: inline-block;
   background-size: 100% 100%;
@@ -770,17 +790,30 @@ section.skill .software .soft-box .item .soft-ico {
   width: 41.05263%; }
 section.skill .software .soft-box .item .soft-ico:last-child {
   margin-right: 0; }
+@media screen and (max-width: 480px) {
+  section.skill .software .soft-box .item .soft-ico {
+    float: left;
+    display: block;
+    margin-right: 1.05263%;
+    width: 100%; }
+  section.skill .software .soft-box .item .soft-ico:last-child {
+    margin-right: 0; } }
 section.skill .software .soft-box .item .soft-ico .soft-logo {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
   margin: 0 auto;
   border-radius: 10px;
   text-align: center;
-  line-height: 180px;
   text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0;
   font-size: 50px;
-  background-size: 100% 100%;
   position: relative; }
+@media screen and (max-width: 768px) {
+  section.skill .software .soft-box .item .soft-ico .soft-logo {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px; } }
 section.skill .software .soft-box .item .soft-ico .soft-logo span {
   font-size: 0.7em; }
 section.skill .software .soft-box .item .soft-ico .soft-logo:hover:after, section.skill .software .soft-box .item .soft-ico .soft-logo:hover:before {
@@ -823,33 +856,108 @@ section.skill .software .soft-box .item .soft-con {
   width: 57.89474%; }
 section.skill .software .soft-box .item .soft-con:last-child {
   margin-right: 0; }
+@media screen and (max-width: 480px) {
+  section.skill .software .soft-box .item .soft-con {
+    float: left;
+    display: block;
+    margin-right: 1.05263%;
+    width: 100%; }
+  section.skill .software .soft-box .item .soft-con:last-child {
+    margin-right: 0; } }
 section.skill .software .soft-box .item .soft-con .soft-title {
   font-size: 25px;
-  margin: 20px auto; }
-section.skill .software .soft-box .item .soft-con .soft-des {
-  *zoom: 1;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-section.skill .software .soft-box .item .soft-con .soft-des:before, section.skill .software .soft-box .item .soft-con .soft-des:after {
-  display: table;
-  content: '';
-  line-height: 0; }
-section.skill .software .soft-box .item .soft-con .soft-des:after {
-  clear: both; }
-section.skill .software .soft-box .item .soft-con .soft-des .soft-par {
-  float: left;
-  display: block;
-  margin-right: 1.05263%;
-  width: 57.89474%; }
-section.skill .software .soft-box .item .soft-con .soft-des .soft-par:last-child {
-  margin-right: 0; }
-section.skill .software .soft-box .item .soft-con .soft-des .soft-mark {
-  float: left;
-  display: block;
-  margin-right: 1.05263%;
-  width: 41.05263%;
-  font-size: 50px;
-  line-height: 1.4em; }
-section.skill .software .soft-box .item .soft-con .soft-des .soft-mark:last-child {
-  margin-right: 0; }
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+@media screen and (max-width: 768px) {
+  section.skill .software .soft-box .item .soft-con .soft-title {
+    margin-top: 0px; } }
+@media screen and (max-width: 480px) {
+  section.skill .software .soft-box .item .soft-con .soft-title {
+    text-align: center;
+    margin-top: 35px; } }
+@media screen and (min-width: 480.1px) {
+  section.skill .software .soft-box .item .soft-con .soft-des {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+  section.skill .software .soft-box .item .soft-con .soft-des:before, section.skill .software .soft-box .item .soft-con .soft-des:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  section.skill .software .soft-box .item .soft-con .soft-des:after {
+    clear: both; }
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-par {
+    float: left;
+    display: block;
+    margin-right: 1.05263%;
+    width: 57.89474%;
+    text-align: left;
+    line-height: 1.4em; }
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-par:last-child {
+    margin-right: 0; }
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark {
+    float: left;
+    display: block;
+    margin-right: 1.05263%;
+    width: 41.05263%;
+    font-size: 50px;
+    position: relative;
+    font-family: "Merriweather Sans", sans-serif; }
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark:last-child {
+    margin-right: 0; }
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 120px;
+    background-color: #F4EBD8;
+    left: 35px;
+    top: -50px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg); } }
+@media screen and (min-width: 480.1px) and (max-width: 880px) {
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark:before {
+    height: 150px; } }
+@media screen and (min-width: 480.1px) and (max-width: 750px) {
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark:before {
+    left: 25px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+@media screen and (min-width: 480.1px) and (max-width: 680px) {
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark:before {
+    left: 15px; } }
+@media screen and (min-width: 480.1px) and (min-width: 480px) and (max-width: 680px) {
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark:before {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  section.skill .software .soft-box .item .soft-con .soft-des {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -moz-box-direction: reverse;
+    box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse; }
+  section.skill .software .soft-box .item .soft-con .soft-des .soft-mark {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Merriweather Sans", sans-serif; } }

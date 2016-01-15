@@ -8,10 +8,19 @@ section.skill
 			margin-top: 50px
 			+bp(max,480px)
 				margin-top: 20px
+		h2
+			display: block
+			margin: 0 auto
+			color: $c-winter
+			+bp(max,480px)
+				font-size: 1em
+				margin-bottom: 8px
 	.software
 		.soft-nav
 			ul
 				height: 80px
+				+bp(max, 480px)
+					height: 50px
 				list-style: none
 				text-align: center
 				li
@@ -71,17 +80,22 @@ section.skill
 				+outer-container
 				.soft-ico
 					+span-columns(5)
+					+bp(max,480px)
+						+span-columns(12)
 					.soft-logo
-						+size(180px)
+						+size(160px)
+						line-height: 160px
+						+bp(max,768px)
+							margin-top: 20px
+							+size(100px)
+							line-height: 100px
 						margin: 0 auto
 						border-radius: 10px
 						text-align: center
-						line-height: 180px
 						+letterpress(0.75)
 						font-size: 50px
 						span
 							font-size: 0.7em
-						background-size: 100% 100%
 						position: relative
 						&:hover
 							&:after,&:before
@@ -103,14 +117,52 @@ section.skill
 
 				.soft-con
 					+span-columns(7)
+					+bp(max,480px)
+						+span-columns(12)
 					.soft-title
 						font-size: 25px
-						margin: 20px auto
+						text-align: left
+						margin-top: 20px
+						margin-bottom: 20px
+						+bp(max, 768px)
+							margin-top: 0px
+						+bp(max, 480px)
+							text-align: center
+							margin-top: 35px
 					.soft-des
-						+outer-container
-						.soft-par
-							+span-columns(7)
-						.soft-mark
-							+span-columns(5)
-							font-size: 50px
-							line-height: 1.4em
+						+bp(min,480.1px)
+							+outer-container
+							.soft-par
+								+span-columns(7)
+								text-align: left
+								line-height: 1.4em
+							.soft-mark
+								+span-columns(5)
+								font-size: 50px
+								position: relative
+								&:before
+									position: absolute
+									content: ""
+									width: 2px
+									height: 120px
+									+bp(max, 880px)
+										height: 150px
+									+bp(max, 750px)
+										left: 25px
+										+juice-prefixer(transform, rotate(0deg), webkit moz ms o spec)
+									+bp(max, 680px)
+										left: 15px
+									+bp(480px, 680px)
+										display: none
+									background-color: $c-winter
+									left: 35px
+									top: -50px
+									+juice-prefixer(transform, rotate(20deg), webkit moz ms o spec)
+								font-family: 'Merriweather Sans', sans-serif
+						+bp(max,480px)
+							+display(flex)
+							+flex-direction(column-reverse)
+							.soft-mark
+								font-size: 50px
+								margin-bottom: 20px
+								font-family: 'Merriweather Sans', sans-serif
