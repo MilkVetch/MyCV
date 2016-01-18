@@ -1,6 +1,6 @@
 section.skill
 	background-color: $c-pompei
-	// height: 400px
+
 	.skill-title
 		text-align: center
 		h1
@@ -15,6 +15,15 @@ section.skill
 			+bp(max,480px)
 				font-size: 1em
 				margin-bottom: 8px
+
+	.line
+		width: 80%
+		height: 1px
+		background-color: $c-winter
+		margin: 20px auto
+		+bp(max, 480px)
+			margin: 10px auto
+
 	.software
 		.soft-nav
 			ul
@@ -166,3 +175,48 @@ section.skill
 								font-size: 50px
 								margin-bottom: 20px
 								font-family: 'Merriweather Sans', sans-serif
+
+	.coding
+		margin-top: 20px
+		.code-box
+			+outer-container
+			margin-top: 20px
+			.code-item
+				+span-columns(4)
+				border-radius: 5px
+				text-align: center
+				padding: 20px
+				&:hover
+					i
+						color: $c-winter
+					ul > li
+						color: $c-winter
+				i
+					color: tint($c-aurora,35%)
+					+bp(max, 768px)
+						color: $c-winter
+				h3
+					margin-top: 10px
+					display: none
+				.code-logo
+					display: block
+					+size(74.5px, 105.25px)
+					margin: 0 auto
+					margin-bottom: 15px
+					background-size: 100% 100%
+					img
+						+size(100%)
+						display: block
+				ul
+					list-style: none
+					margin-top: 10px
+					li
+						color: shade($c-winter,30%)
+						margin-bottom: 8px
+						+bp(max, 768px)
+							color: $c-winter
+				+bp(max,480px)
+					+span-columns(12)
+
+
+

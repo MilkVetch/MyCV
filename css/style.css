@@ -706,6 +706,14 @@ section.skill .skill-title h2 {
   section.skill .skill-title h2 {
     font-size: 1em;
     margin-bottom: 8px; } }
+section.skill .line {
+  width: 80%;
+  height: 1px;
+  background-color: #F4EBD8;
+  margin: 20px auto; }
+@media screen and (max-width: 480px) {
+  section.skill .line {
+    margin: 10px auto; } }
 section.skill .software .soft-nav ul {
   height: 80px;
   list-style: none;
@@ -961,3 +969,67 @@ section.skill .software .soft-box .item .soft-con .soft-title {
     font-size: 50px;
     margin-bottom: 20px;
     font-family: "Merriweather Sans", sans-serif; } }
+section.skill .coding {
+  margin-top: 20px; }
+section.skill .coding .code-box {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; }
+section.skill .coding .code-box:before, section.skill .coding .code-box:after {
+  display: table;
+  content: '';
+  line-height: 0; }
+section.skill .coding .code-box:after {
+  clear: both; }
+section.skill .coding .code-box .code-item {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 32.63158%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px; }
+section.skill .coding .code-box .code-item:last-child {
+  margin-right: 0; }
+section.skill .coding .code-box .code-item:hover i {
+  color: #F4EBD8; }
+section.skill .coding .code-box .code-item:hover ul > li {
+  color: #F4EBD8; }
+section.skill .coding .code-box .code-item i {
+  color: #d68087; }
+@media screen and (max-width: 768px) {
+  section.skill .coding .code-box .code-item i {
+    color: #F4EBD8; } }
+section.skill .coding .code-box .code-item h3 {
+  margin-top: 10px;
+  display: none; }
+section.skill .coding .code-box .code-item .code-logo {
+  display: block;
+  width: 74.5px;
+  height: 105.25px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-size: 100% 100%; }
+section.skill .coding .code-box .code-item .code-logo img {
+  width: 100%;
+  height: 100%;
+  display: block; }
+section.skill .coding .code-box .code-item ul {
+  list-style: none;
+  margin-top: 10px; }
+section.skill .coding .code-box .code-item ul li {
+  color: #aba597;
+  margin-bottom: 8px; }
+@media screen and (max-width: 768px) {
+  section.skill .coding .code-box .code-item ul li {
+    color: #F4EBD8; } }
+@media screen and (max-width: 480px) {
+  section.skill .coding .code-box .code-item {
+    float: left;
+    display: block;
+    margin-right: 1.05263%;
+    width: 100%; }
+  section.skill .coding .code-box .code-item:last-child {
+    margin-right: 0; } }
