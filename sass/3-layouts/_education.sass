@@ -1,0 +1,93 @@
+section.education
+	background-color: $c-winter
+	text-align: center
+	*
+		color: $c-inkjade
+
+	h1
+		display: inline-block
+		margin-top: 50px
+		+bp(max,480px)
+			margin-top: 20px
+
+.edu-box
+	+outer-container
+	.edu-item
+		+span-columns(6)
+		padding: 1em
+		+bp(max, 768px)
+			+span-columns(12)
+			padding-left: 2em
+			padding-right: 2em
+
+		.card
+			border: 1px solid #ccc
+			border-radius: 3px
+			overflow: hidden
+			&:hover
+				border-color: shade(#ccc,15%)
+				+box-emboss(0.4,0.6)
+				.card-image
+					&:after
+						opacity: 0.2
+					.school-logo
+						display: block
+						+bp(max, 768px)
+							display: block
+
+			.card-image
+				background-size: cover
+				width: 100%
+				height: 200px
+				+bp(max, 480px)
+					height: 120px
+				position: relative
+				+juice-prefixer(transition, all 0.3s, webkit moz ms o spec)
+				&:after
+					+juice-prefixer(transition, all 0.3s, webkit moz ms o spec)
+					position: absolute
+					top: 0
+					left: 0
+					+size(100%)
+					content: ""
+					background-color: $c-pompei
+					opacity: 0
+					z-index: 1
+					+bp(max, 768px)
+						opacity: 0.4
+				.school-logo
+					z-index: 2
+					font-size: 2em
+					font-weight: bolder
+					color: $c-winter
+					text-align: center
+					position: absolute
+					left: 50%
+					top: 50%
+					+juice-prefixer(transform, translate(-50%,-50%), webkit moz ms o spec)
+					display: none
+					+bp(max, 768px)
+						display: block
+			.card-image.sit
+				background-image: url(../img/sit.jpg)
+			.card-image.nzse
+				background-image: url(../img/nzse.jpg)
+
+			.card-title
+				display: block
+				text-align: left
+				border-bottom: 1px solid #ccc
+				padding: 12px 1em
+				font-size: 1.1em
+
+			.card-content
+				display: block
+				text-align: left
+				padding: 12px 1em
+				ul
+					list-style: none
+					li
+						&:not(:last-child)
+							margin-bottom: 10px
+						span
+							color: $c-pompei
