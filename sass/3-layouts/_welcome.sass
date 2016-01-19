@@ -5,7 +5,10 @@ section.welcome
 	background-attachment: fixed
 
 	.welcome-container
-		+centerer
+		position: absolute
+		top: 50%
+		left: 50%
+		+juice-prefixer(transform, translate(-50%,-50%), webkit moz ms o spec)
 
 		div
 			text-align: center

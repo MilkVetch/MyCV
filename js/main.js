@@ -97,4 +97,15 @@ $('.interest-box i').mouseover(function() {
 		});
 	});
 
+// skill-bar
+	$('.other-item').mouseover(function() {
+		var ele = $(this).find('.other-skill');
+		var sk = ele.data('percentage');
+		ele.removeClass(sk);
+		function addskill () {
+			ele.addClass(sk);
+		}
+		setTimeout(addskill,400);
+	});
+
 

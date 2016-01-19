@@ -218,5 +218,80 @@ section.skill
 				+bp(max,480px)
 					+span-columns(12)
 
+	.other
+		ul
+			margin-top: 40px
+			+outer-container
+			+bp(max, 1220px)
+				padding: 0 90px
+			// +bp(max, 768px)
+			// 	padding-right: 110px
+			li
+				+span-columns(6)
+				+omega(2n)
+				+bp(max, 768px)
+					+span-columns(12)
+					+omega(1n)
+				margin-bottom: 20px
+				color: $c-winter
+				.other-item
+					+outer-container
+					i
+						+span-columns(3)
+						+bp(max, 768px)
+							+span-columns(12)
+						font-size: 50px
+						text-align: center
+					h3
+						+bp(max, 768px)
+							text-align: center
+					.other-des
+						+span-columns(9)
+						+bp(max, 768px)
+							+span-columns(12)
+						.other-bar
+							cursor: pointer
+							margin-top: 5px
+							width: 100%
+							height: 20px
+							background-color: $c-winter
+							position: relative
+							+bp(max, 768px)
+								margin: 8px auto
+							.other-skill
+								position: absolute
+								left: 1px
+								top: 1px
+								height: 18px
+								width: 0
+								background-color: $c-aurora
+								+juice-prefixer(transition, all 0.3s ease-in-out, webkit moz ms o spec)
+							.other-skill.per-70
+								width: -webkit-calc((100% - 2px) * 0.7)
+								width: -moz-calc((100% - 2px) * 0.7)
+								width: calc((100% - 2px) * 0.7)
+							.other-skill.per-75
+								width: -webkit-calc((100% - 2px) * 0.75)
+								width: -moz-calc((100% - 2px) * 0.75)
+								width: calc((100% - 2px) * 0.75)
+							.other-skill.per-80
+								width: -webkit-calc((100% - 2px) * 0.8)
+								width: -moz-calc((100% - 2px) * 0.8)
+								width: calc((100% - 2px) * 0.8)
+							.other-skill.per-85
+								width: -webkit-calc((100% - 2px) * 0.85)
+								width: -moz-calc((100% - 2px) * 0.85)
+								width: calc((100% - 2px) * 0.85)
+							.other-skill.per-90
+								width: -webkit-calc((100% - 2px) * 0.9)
+								width: -moz-calc((100% - 2px) * 0.9)
+								width: calc((100% - 2px) * 0.9)
+							.other-skill.per-95
+								width: -webkit-calc((100% - 2px) * 0.95)
+								width: -moz-calc((100% - 2px) * 0.95)
+								width: calc((100% - 2px) * 0.95)
+
+
+
 
 
