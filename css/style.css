@@ -1341,6 +1341,14 @@ section.work .work-box .work-item:last-child {
     width: 100%; }
   section.work .work-box .work-item:last-child {
     margin-right: 0; } }
+@media screen and (max-width: 480px) {
+  section.work .work-box .work-item {
+    float: left;
+    display: block;
+    margin-right: 1.05263%;
+    width: 100%; }
+  section.work .work-box .work-item:last-child {
+    margin-right: 0; } }
 section.work .work-box .work-item .work-ball {
   cursor: pointer;
   position: relative;
@@ -1353,6 +1361,9 @@ section.work .work-box .work-item .work-ball {
   -ms-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   margin: 0 auto; }
 section.work .work-box .work-item .work-ball:hover {
