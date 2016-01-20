@@ -222,10 +222,12 @@ section.skill
 		ul
 			margin-top: 40px
 			+outer-container
+			padding-bottom: 50px
 			+bp(max, 1220px)
-				padding: 0 90px
-			// +bp(max, 768px)
-			// 	padding-right: 110px
+				padding-left: 90px
+				padding-right: 90px
+			+bp(max, 768px)
+				padding-bottom: 30px
 			li
 				+span-columns(6)
 				+omega(2n)

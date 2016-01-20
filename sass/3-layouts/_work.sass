@@ -1,0 +1,93 @@
+section.work
+	background-color: $c-winter
+	text-align: center
+	*
+		color: $c-inkjade
+
+	h1
+		display: inline-block
+		margin-top: 50px
+		+bp(max,480px)
+			margin-top: 20px
+
+	.work-box
+		+outer-container
+		.work-item
+			-webkit-perspective: 700
+			-moz-perspective: 700
+			-o-perspective: 700
+			perspective: 700
+			+span-columns(4)
+			+bp(max, 768px)
+				+span-columns(4)
+			+bp(max, 480px)
+				+span-columns(12)
+
+			.work-ball
+				cursor: pointer
+				position: relative
+				+size(250px)
+				border-radius: 50%
+				background-color: $c-pompei
+				&:hover
+					background-color: $c-aurora
+					+juice-prefixer(transform, rotateY(180deg), webkit moz ms o spec)
+				+juice-prefixer(transition, all 0.6s, webkit moz ms o spec)
+				transform-style: preserve-3d
+				margin: 0 auto
+
+				.front,.back
+					position: absolute
+					top: 0
+					left: 0
+					+size(100%)
+					backface-visibility: hidden
+					overflow: hidden
+				.front
+					.work-logo
+						display: inline-block
+						+size(100px)
+						background-size: cover
+						margin: 0 auto
+						margin-top: 45px
+					.work-logo.misho
+						background-image: url(../img/landscape.png)
+					.work-logo.chunxiang
+						background-image: url(../img/tutor.png)
+					.work-logo.helpdesk
+						background-image: url(../img/developer.png)
+					.work-name
+						margin-top: 10px
+						color: $c-winter
+					.work-time
+						margin-top: 10px
+						color: white
+
+				.back
+					+juice-prefixer(transform, rotateY(180deg), webkit moz ms o spec)
+					.work-des
+						+size(176.75px)
+						display: block
+						position: absolute
+						top: 50%
+						left: 50%
+						padding-top: 10px
+						text-align: center
+						+juice-prefixer(transform, translate(-50%,-50%), webkit moz ms o spec)
+						h3
+							color: white
+							display: inline-block
+							border-bottom: 1px solid $c-winter
+							padding-bottom: 5px
+						p
+							margin-top: 10px
+							color: $c-winter
+				+bp(max, 768px)
+					+size(160px)
+				+bp(max, 480px)
+					+size(250px)
+
+
+
+
+
