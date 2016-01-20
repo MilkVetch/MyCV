@@ -29,10 +29,9 @@ section.work
 				+size(250px)
 				border-radius: 50%
 				background-color: $c-pompei
-				+bp(min, 768px)
-					&:hover
-						background-color: $c-aurora
-						+juice-prefixer(transform, rotateY(180deg), webkit moz ms o spec)
+				&:hover
+					background-color: $c-aurora
+					+juice-prefixer(transform, rotateY(180deg), webkit moz ms o spec)
 				+juice-prefixer(transition, all 0.6s, webkit moz ms o spec)
 				-webkit-transform-style: preserve-3d
 				-moz-transform-style: preserve-3d
@@ -65,15 +64,15 @@ section.work
 						background-image: url(../img/developer.png)
 					.work-name
 						margin-top: 10px
-						color: $c-winter
+						color: white
 					.work-time
 						margin-top: 10px
-						color: white
+						color: $c-winter
 
 				.back
 					+juice-prefixer(transform, rotateY(180deg), webkit moz ms o spec)
 					.work-des
-						+size(176.75px)
+						+size(175px)
 						display: block
 						position: absolute
 						top: 50%

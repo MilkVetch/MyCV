@@ -109,14 +109,14 @@ $('.interest-box i').mouseover(function() {
 	});
 
 // work-ball
-	$('.work-ball').click(function() {
-		$(this).css({
-			'-webkit-transform': 'rotateY(180deg)',
-			'-moz-transform': 'rotateY(180deg)',
-			'-ms-transform': 'rotateY(180deg)',
-			'-o-transform': 'rotateY(180deg)',
-			'transform': 'rotateY(180deg)'
-		});
-	});
+	// $('.work-ball').click(function() {
+	// 	$(this).css({
+	// 		'-webkit-transform': 'rotateY(180deg)',
+	// 		'-moz-transform': 'rotateY(180deg)',
+	// 		'-ms-transform': 'rotateY(180deg)',
+	// 		'-o-transform': 'rotateY(180deg)',
+	// 		'transform': 'rotateY(180deg)'
+	// 	});
+	// });
 
 

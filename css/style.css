@@ -1366,14 +1366,13 @@ section.work .work-box .work-item .work-ball {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   margin: 0 auto; }
-@media screen and (min-width: 768px) {
-  section.work .work-box .work-item .work-ball:hover {
-    background-color: #C03B46;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg); } }
+section.work .work-box .work-item .work-ball:hover {
+  background-color: #C03B46;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
 section.work .work-box .work-item .work-ball .front, section.work .work-box .work-item .work-ball .back {
   position: absolute;
   top: 0;
@@ -1400,10 +1399,10 @@ section.work .work-box .work-item .work-ball .front .work-logo.helpdesk {
   background-image: url(../img/developer.png); }
 section.work .work-box .work-item .work-ball .front .work-name {
   margin-top: 10px;
-  color: #F4EBD8; }
+  color: white; }
 section.work .work-box .work-item .work-ball .front .work-time {
   margin-top: 10px;
-  color: white; }
+  color: #F4EBD8; }
 section.work .work-box .work-item .work-ball .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -1411,8 +1410,8 @@ section.work .work-box .work-item .work-ball .back {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 section.work .work-box .work-item .work-ball .back .work-des {
-  width: 176.75px;
-  height: 176.75px;
+  width: 175px;
+  height: 175px;
   display: block;
   position: absolute;
   top: 50%;
