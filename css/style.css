@@ -1382,8 +1382,7 @@ section.work .work-box .work-item .work-ball .front, section.work .work-box .wor
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  overflow: hidden; }
+  backface-visibility: hidden; }
 section.work .work-box .work-item .work-ball .front .work-logo {
   display: inline-block;
   width: 100px;
