@@ -1338,14 +1338,6 @@ section.work .work-box .work-item:last-child {
     float: left;
     display: block;
     margin-right: 1.05263%;
-    width: 32.63158%; }
-  section.work .work-box .work-item:last-child {
-    margin-right: 0; } }
-@media screen and (max-width: 480px) {
-  section.work .work-box .work-item {
-    float: left;
-    display: block;
-    margin-right: 1.05263%;
     width: 100%; }
   section.work .work-box .work-item:last-child {
     margin-right: 0; } }
@@ -1428,11 +1420,3 @@ section.work .work-box .work-item .work-ball .back .work-des h3 {
 section.work .work-box .work-item .work-ball .back .work-des p {
   margin-top: 10px;
   color: #F4EBD8; }
-@media screen and (max-width: 768px) {
-  section.work .work-box .work-item .work-ball {
-    width: 160px;
-    height: 160px; } }
-@media screen and (max-width: 480px) {
-  section.work .work-box .work-item .work-ball {
-    width: 250px;
-    height: 250px; } }
