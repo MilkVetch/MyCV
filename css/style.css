@@ -1341,7 +1341,11 @@ section.work .work-box .work-item:last-child {
     width: 100%;
     margin-bottom: 30px; }
   section.work .work-box .work-item:last-child {
-    margin-right: 0; } }
+    margin-right: 0; }
+  section.work .work-box .work-item:nth-child(1n) {
+    margin-right: 0; }
+  section.work .work-box .work-item:nth-child(1n+1) {
+    clear: left; } }
 @media screen and (max-width: 480px) {
   section.work .work-box .work-item {
     float: left;
@@ -1350,7 +1354,11 @@ section.work .work-box .work-item:last-child {
     width: 100%;
     margin-bottom: 30px; }
   section.work .work-box .work-item:last-child {
-    margin-right: 0; } }
+    margin-right: 0; }
+  section.work .work-box .work-item:nth-child(1n) {
+    margin-right: 0; }
+  section.work .work-box .work-item:nth-child(1n+1) {
+    clear: left; } }
 section.work .work-box .work-item .work-ball {
   cursor: pointer;
   position: relative;
