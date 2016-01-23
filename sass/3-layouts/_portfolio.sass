@@ -1,0 +1,224 @@
+section.portfolio
+	background: url(../img/port.jpg) center center
+	+bp(max, 768px)
+		background: none
+	background-size: cover
+	text-align: center
+	*
+		color: $c-winter
+
+	.port-box
+		width: 100%
+		height: 530px
+		clear: both
+		+bp(max, 768px)
+			height: auto
+		.left
+			display: block
+			height: 100%
+			float: left
+			h1
+				display: none
+			+bp(max, 768px)
+				float: none
+				min-width: 100%
+				background: $c-inkjade
+				h1
+					display: inline-block
+					margin: 30px auto
+					+bp(max,480px)
+						margin: 20px auto
+
+		.right
+			background-color: rgba(58,61,63,0.8)
+			display: block
+			height: 100%
+			float: right
+			min-width: 1170px
+			+bp(max, 1170px)
+				min-width: 768px
+			ul.port-container
+				+outer-container
+				height: 450px
+				overflow-x: hidden
+				overflow-y: scroll
+				&::-webkit-scrollbar
+					width: 10px
+
+				&::-webkit-scrollbar-track
+					-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+					-webkit-border-radius: 5px
+					border-radius: 5px
+				&::-webkit-scrollbar-thumb
+					-webkit-border-radius: 5px
+					border-radius: 5px
+					background: rgba(244,235,216,0.8)
+					-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+
+				&::-webkit-scrollbar-thumb:window-inactive
+					background: rgba(244,235,216,0.4)
+				list-style: none
+				li.port-item
+					+span-columns(3)
+					+omega
+					+bp(max, 1170px)
+						+span-columns(4)
+						+omega
+					+bp(max, 768px)
+						+span-columns(6)
+						+omega
+					+bp(max, 480px)
+						+span-columns(12)
+						+omega
+
+					height: 200px
+					margin-bottom: 20px
+					.port-element
+						+size(200px)
+						margin: 0 auto
+						border-radius: 5px
+						cursor: pointer
+						position: relative
+						overflow: hidden
+						&:after
+							position: absolute
+							left: 0
+							top: 0
+							content: ""
+							+size(100%)
+							background-color: rgba(0,0,0,0.3)
+							+juice-prefixer(transition, all 0.4s ease, webkit moz ms o spec)
+						.port-ele-info
+							position: absolute
+							width: 100%
+							height: 30%
+							background-color: $c-pompei
+							bottom: 0
+							left: 0
+							+juice-prefixer(transition, all 0.4s ease, webkit moz ms o spec)
+							+juice-prefixer(transform, translateY(100%), webkit moz ms o spec)
+							.port-ele-title
+								font-size: 1.1em
+							.port-ele-content
+								width: 100%
+						&:hover
+							&:after
+								background-color: rgba(0,0,0,0)
+							.port-ele-info
+								+juice-prefixer(transform, translateY(0%), webkit moz ms o spec)
+
+
+
+			+bp(max, 768px)
+				float: none
+				min-width: 100%
+				background: url(../img/port.jpg) center center
+				.bg
+					background-color: rgba(58,61,63,0.8)
+					h1
+						display: none
+					ul
+						padding-top: 30px
+
+	.port-element.port-1
+		background: url(../img/front001.jpg)
+	.port-element.port-2
+		background: url(../img/front002.jpg)
+	.port-element.port-3
+		background: url(../img/front003.jpg)
+	.port-element.port-4
+		background: url(../img/front004.jpg)
+	.port-element.port-5
+		background: url(../img/front005.jpg)
+	.port-element.port-6
+		background: url(../img/front006.jpg)
+	.port-element.port-7
+		background: url(../img/front007.jpg)
+	.port-element.port-8
+		background: url(../img/front008.jpg)
+	// .port-box
+	// 	width: 100%
+	// 	height: 530px
+	// 	clear: both
+	// 	.left
+	// 		display: block
+	// 		height: 530px
+	// 		float: left
+	// 		h1
+	// 			display: none
+	// 	.right
+	// 		display: block
+	// 		min-width: 988px
+	// 		+bp(max, 768px)
+	// 			min-width: 768px
+	// 		height: 530px
+	// 		float: right
+	// 		background-color: rgba(58,61,63,0.8)
+	// 		overflow-x: hidden
+	// 		overflow-y: scroll
+
+	// 		&::-webkit-scrollbar
+	// 			width: 10px
+
+	// 		&::-webkit-scrollbar-track
+	// 			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+	// 			-webkit-border-radius: 5px
+	// 			border-radius: 5px
+	// 		&::-webkit-scrollbar-thumb
+	// 			-webkit-border-radius: 5px
+	// 			border-radius: 5px
+	// 			background: rgba(244,235,216,0.8)
+	// 			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+
+	// 		&::-webkit-scrollbar-thumb:window-inactive
+	// 			background: rgba(244,235,216,0.4)
+
+	// 		ul.port-container
+	// 			width: 100%
+	// 			+outer-container
+	// 			li.port-item
+	// 				+span-columns(3)
+	// 				+omega(4n)
+	// 				height: 200px
+	// 				margin-bottom: 20px
+	// 				.port-element
+	// 					+size(200px)
+	// 					background-color: pink
+	// 					display: block
+	// 					margin: 0 auto
+
+	// 	+bp(max, 1170px)
+	// 		ul.port-container
+	// 			width: 100%
+	// 			+outer-container
+	// 			li.port-item
+	// 				+span-columns(4)
+	// 				+omega(3n)
+
+	// 	+bp(max, 768px)
+	// 		height: auto
+	// 		min-width: initial
+	// 		.left
+	// 			width: 100%
+	// 			float: none
+	// 			height: 140px
+	// 			+bp(max,480px)
+	// 				height: 85px
+	// 			background-color: $c-inkjade
+	// 			h1
+	// 				display: inline-block
+	// 				margin-top: 50px
+	// 				+bp(max,480px)
+	// 					margin-top: 20px
+	// 		.right
+	// 			width: 100%
+	// 			height: auto
+	// 			min-width: initial
+	// 			float: none
+	// 			background: url(../img/port.jpg) center center
+	// 			.bg
+	// 				background-color: rgba(58,61,63,0.8)
+	// 				h1
+	// 					display: none
+
+
