@@ -1,0 +1,40 @@
+section.contact
+	+size(100%, 500px)
+	background-color: $c-inkjade
+	position: fixed
+	left: 0
+	bottom: 0
+	z-index: -1
+
+	#map_canvas
+		height: 400px
+		width: 100%
+		position: relative
+		&:after
+			content: "I AM HERE"
+			color: $c-winter
+			+size(200px, 40px)
+			line-height: 40px
+			background-color: $c-pompei
+			position: absolute
+			top: 0
+			left: 50px
+			+bp(max, 480px)
+				width: 100%
+				left: 0px
+				background-color: $c-aurora
+			text-align: center
+		img
+			max-width: none
+		.content
+			padding: 0 0.5em 1em 0.5em
+		.firstHeading
+			font-size: 1em
+			line-height: 1em
+			font-weight: bold
+			margin: 0
+		#bodyContent
+			p
+				font-size: 1em
+				margin: 0
+
