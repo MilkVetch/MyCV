@@ -108,15 +108,7 @@ $('.interest-box i').mouseover(function() {
 		setTimeout(addskill,400);
 	});
 
-// work-ball
-	// $('.work-ball').click(function() {
-	// 	$(this).css({
-	// 		'-webkit-transform': 'rotateY(180deg)',
-	// 		'-moz-transform': 'rotateY(180deg)',
-	// 		'-ms-transform': 'rotateY(180deg)',
-	// 		'-o-transform': 'rotateY(180deg)',
-	// 		'transform': 'rotateY(180deg)'
-	// 	});
-	// });
+
+
 
 

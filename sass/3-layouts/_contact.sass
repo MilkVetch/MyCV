@@ -1,13 +1,21 @@
 section.contact
-	+size(100%, 500px)
-	background-color: $c-inkjade
+	+size(100%, 660px)
+	+bp(max, 768px)
+		height: 550px
+	+bp(max, 480px)
+		height: 440px
+	background-color: $c-winter
 	position: fixed
 	left: 0
 	bottom: 0
 	z-index: -1
 
 	#map_canvas
-		height: 400px
+		height: 300px
+		+bp(max, 768px)
+			height: 250px
+		+bp(max, 480px)
+			height: 200px
 		width: 100%
 		position: relative
 		&:after
@@ -15,14 +23,14 @@ section.contact
 			color: $c-winter
 			+size(200px, 40px)
 			line-height: 40px
-			background-color: $c-pompei
+			background-color: rgba(58,61,63,0.8)
 			position: absolute
 			top: 0
 			left: 50px
 			+bp(max, 480px)
 				width: 100%
 				left: 0px
-				background-color: $c-aurora
+				background-color: rgba(58,61,63,0.8)
 			text-align: center
 		img
 			max-width: none
@@ -38,3 +46,102 @@ section.contact
 				font-size: 1em
 				margin: 0
 
+	h1
+		+size(100%, 100px)
+		+bp(max, 768px)
+			height: 80px
+			line-height: 80px
+		+bp(max, 480px)
+			height: 60px
+			line-height: 60px
+		text-align: center
+		line-height: 100px
+		display: inline-block
+		margin: 0
+		background-color: $c-winter
+
+	a.mail
+		display: inline-block
+		+size(100%, 100px)
+		line-height: 100px
+		background-color: $c-winter
+		text-align: center
+		font-size: 40px
+		text-decoration: none
+		color: $c-pompei
+		position: relative
+		+juice-prefixer(transition, all 0.4s ease, webkit moz ms o spec)
+		&:after
+			position: absolute
+			left: 50%
+			top: -50px
+			+juice-prefixer(transform, translateX(-50%), webkit moz ms o spec)
+			content: "My E-mail"
+			color: $c-inkjade
+			font-size: 20px
+			+bp(max, 768px)
+				top: -35px
+				font-size: 18px
+			+bp(max, 480px)
+				top: -25px
+				font-size: 15px
+		&:hover
+			color: $c-winter
+			background-color: $c-pompei
+			&:after
+				content: ""
+		+bp(max, 768px)
+			height: 80px
+			line-height: 80px
+			font-size: 32px
+		+bp(max, 480px)
+			height: 60px
+			line-height: 60px
+			font-size: 24px
+
+	a.tel
+		margin-top: 20px
+		display: inline-block
+		+size(100%, 100px)
+		line-height: 100px
+		background-color: $c-winter
+		text-align: center
+		font-size: 40px
+		text-decoration: none
+		color: $c-pompei
+		position: relative
+		+juice-prefixer(transition, all 0.4s ease, webkit moz ms o spec)
+		&:after
+			position: absolute
+			left: 50%
+			top: -50px
+			+juice-prefixer(transform, translateX(-50%), webkit moz ms o spec)
+			content: "Or Call Me"
+			color: $c-inkjade
+			font-size: 20px
+			+bp(max, 768px)
+				top: -35px
+				font-size: 18px
+			+bp(max, 480px)
+				top: -25px
+				font-size: 15px
+		&:hover
+			color: $c-winter
+			background-color: $c-pompei
+			&:after
+				content: ""
+		+bp(max, 768px)
+			height: 80px
+			line-height: 80px
+			font-size: 32px
+		+bp(max, 480px)
+			height: 60px
+			line-height: 60px
+			font-size: 24px
+
+	.footer
+		+size(100%, 40px)
+		line-height: 40px
+		text-align: center
+		color: $c-winter
+		background-color: $c-inkjade

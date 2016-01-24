@@ -1632,7 +1632,13 @@ section.social {
   background-color: #A82E45;
   text-align: center;
   padding-bottom: 40px;
-  margin-bottom: 500px; }
+  margin-bottom: 660px; }
+@media screen and (max-width: 768px) {
+  section.social {
+    margin-bottom: 550px; } }
+@media screen and (max-width: 480px) {
+  section.social {
+    margin-bottom: 440px; } }
 @media screen and (max-width: 480px) {
   section.social {
     padding-bottom: 20px; } }
@@ -1712,23 +1718,35 @@ section.social .social-box .social-item i:hover {
 
 section.contact {
   width: 100%;
-  height: 500px;
-  background-color: #3A3D3F;
+  height: 660px;
+  background-color: #F4EBD8;
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: -1; }
+@media screen and (max-width: 768px) {
+  section.contact {
+    height: 550px; } }
+@media screen and (max-width: 480px) {
+  section.contact {
+    height: 440px; } }
 section.contact #map_canvas {
-  height: 400px;
+  height: 300px;
   width: 100%;
   position: relative; }
+@media screen and (max-width: 768px) {
+  section.contact #map_canvas {
+    height: 250px; } }
+@media screen and (max-width: 480px) {
+  section.contact #map_canvas {
+    height: 200px; } }
 section.contact #map_canvas:after {
   content: "I AM HERE";
   color: #F4EBD8;
   width: 200px;
   height: 40px;
   line-height: 40px;
-  background-color: #A82E45;
+  background-color: rgba(58, 61, 63, 0.8);
   position: absolute;
   top: 0;
   left: 50px;
@@ -1737,7 +1755,7 @@ section.contact #map_canvas:after {
   section.contact #map_canvas:after {
     width: 100%;
     left: 0px;
-    background-color: #C03B46; } }
+    background-color: rgba(58, 61, 63, 0.8); } }
 section.contact #map_canvas img {
   max-width: none; }
 section.contact #map_canvas .content {
@@ -1750,3 +1768,129 @@ section.contact #map_canvas .firstHeading {
 section.contact #map_canvas #bodyContent p {
   font-size: 1em;
   margin: 0; }
+section.contact h1 {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+  margin: 0;
+  background-color: #F4EBD8; }
+@media screen and (max-width: 768px) {
+  section.contact h1 {
+    height: 80px;
+    line-height: 80px; } }
+@media screen and (max-width: 480px) {
+  section.contact h1 {
+    height: 60px;
+    line-height: 60px; } }
+section.contact a.mail {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #F4EBD8;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: #A82E45;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+section.contact a.mail:after {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "My E-mail";
+  color: #3A3D3F;
+  font-size: 20px; }
+@media screen and (max-width: 768px) {
+  section.contact a.mail:after {
+    top: -35px;
+    font-size: 18px; } }
+@media screen and (max-width: 480px) {
+  section.contact a.mail:after {
+    top: -25px;
+    font-size: 15px; } }
+section.contact a.mail:hover {
+  color: #F4EBD8;
+  background-color: #A82E45; }
+section.contact a.mail:hover:after {
+  content: ""; }
+@media screen and (max-width: 768px) {
+  section.contact a.mail {
+    height: 80px;
+    line-height: 80px;
+    font-size: 32px; } }
+@media screen and (max-width: 480px) {
+  section.contact a.mail {
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px; } }
+section.contact a.tel {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #F4EBD8;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: #A82E45;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+section.contact a.tel:after {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "Or Call Me";
+  color: #3A3D3F;
+  font-size: 20px; }
+@media screen and (max-width: 768px) {
+  section.contact a.tel:after {
+    top: -35px;
+    font-size: 18px; } }
+@media screen and (max-width: 480px) {
+  section.contact a.tel:after {
+    top: -25px;
+    font-size: 15px; } }
+section.contact a.tel:hover {
+  color: #F4EBD8;
+  background-color: #A82E45; }
+section.contact a.tel:hover:after {
+  content: ""; }
+@media screen and (max-width: 768px) {
+  section.contact a.tel {
+    height: 80px;
+    line-height: 80px;
+    font-size: 32px; } }
+@media screen and (max-width: 480px) {
+  section.contact a.tel {
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px; } }
+section.contact .footer {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #F4EBD8;
+  background-color: #3A3D3F; }
