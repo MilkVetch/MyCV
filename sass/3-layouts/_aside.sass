@@ -88,3 +88,32 @@ aside
 		+fixed(0px,0px,0px,0px)
 		+size(100%,100%)
 		display: none
+
+	.btt
+		cursor: pointer
+		display: none
+		position: fixed
+		bottom: 20px
+		right: 20px
+		z-index: 1000
+		+size(40px)
+		text-align: center
+		font-size: 24px
+		line-height: 40px
+		color: $c-pompei
+		border: 1px solid $c-pompei
+		border-radius: 50%
+		background-color: rgba(255,255,255,0.7)
+		+juice-prefixer(transition, all 0.4s ease, webkit moz ms o spec)
+		&:hover
+			color: $c-winter
+			background-color: $c-aurora
+			box-shadow: 0 0 5px rgba(0,0,0,0.6)
+			border: 1px solid $c-aurora
+			&:after
+				position: fixed
+				bottom: -10px
+				right: 28px
+				content: "TOP"
+				font-size: 8px
+				color: rgba(255,255,255,0.7)
