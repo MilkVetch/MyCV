@@ -678,7 +678,7 @@ section.about .wrapper .col-6:last-child {
 }
 
 section.about .wrapper .col-6.image {
-  background-image: url(../img/sketch.jpg);
+  background-image: url(../img/sketchnono.jpg);
   transition: all 0.4s ease;
   background-position: center right;
   background-size: cover;
